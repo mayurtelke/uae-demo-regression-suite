@@ -57,6 +57,7 @@ async function runStepsUpToV1(
 
   // Step 3: Filter Functionality
   if (throughStep >= 3) {
+    
     await invoice.submitInvoice();
     const finalSubmit = new FinalSubmitInvoiceAlternate(page, invoiceNumber!);
     await finalSubmit.clickFilter();
